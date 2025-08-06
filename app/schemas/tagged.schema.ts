@@ -11,5 +11,5 @@ const taggedSchema = z.array(taggedItemSchema);
 
 type Tagged = z.infer<typeof taggedItemSchema>;
 
-export { taggedSchema, taggedItemSchema };
+export { taggedSchema };
 export type { Tagged };

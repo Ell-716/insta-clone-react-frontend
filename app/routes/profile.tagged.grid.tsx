@@ -1,12 +1,12 @@
 import { useLoaderData } from "react-router";
 import { api } from "~/services/api";
-import { taggedArraySchema, type Tagged } from "~/schemas/tagged.schema";
+import { taggedSchema, type Tagged } from "~/schemas/tagged.schema";
 import { PostCard } from "~/components/PostCard";
 
 export async function loader() {
   try {
     const response = await api.get("/tagged/grid");
-    return taggedArraySchema.parse(response.data);
+    return taggedSchema.parse(response.data);
   } catch (error) {
     console.error("Failed to load tagged posts:", error);
     throw new Response("Could not load tagged posts.", { status: 500 });
