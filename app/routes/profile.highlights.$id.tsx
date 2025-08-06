@@ -1,6 +1,6 @@
 import { useLoaderData, type LoaderFunctionArgs } from "react-router";
 import { api } from "~/services/api";
-import { highlightSchema, type Highlight } from "~/schemas/highlights.schema";
+import { highlightSchema, type Highlight } from "~/schemas/highlight.schema";
 import { HighlightStory } from "~/components/HighlightStory";
 
 export async function loader({ params }: LoaderFunctionArgs) {
