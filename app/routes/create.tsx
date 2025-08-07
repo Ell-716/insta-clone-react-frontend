@@ -1,4 +1,5 @@
-import { ActionFunctionArgs, redirect } from "react-router";
+import type { ActionFunctionArgs } from "react-router";
+import { redirect } from "react-router";
 import { CreatePostForm } from "~/components/CreatePostForm";
 import { api } from "~/services/api";
 import { createPostInputSchema } from "~/schemas/post.schema";

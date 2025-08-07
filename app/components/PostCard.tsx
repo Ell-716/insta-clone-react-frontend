@@ -1,5 +1,7 @@
 import type { Post } from "~/schemas/post.schema";
 
+const BACKEND_URL = "http://localhost:3000";
+
 export function PostCard({ post }: { post: Post }) {
   return (
     <div className='w-full max-w-lg mx-auto rounded-lg overflow-hidden border bg-white mb-6'>
@@ -7,7 +9,7 @@ export function PostCard({ post }: { post: Post }) {
         <p className='font-bold'>webeet_user</p>
       </div>
       <img
-        src={post.img_url}
+        src={`${BACKEND_URL}${post.img_url}`}
         alt={post.caption || "Instagram post"}
         className='w-full h-auto aspect-square object-cover'
       />
