@@ -15,8 +15,9 @@ export async function loader() {
 
 export default function PostsGrid() {
   const posts = useLoaderData() as Post[];
+
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+    <div className="flex flex-col gap-6 max-w-md mx-auto mt-4">
       {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}

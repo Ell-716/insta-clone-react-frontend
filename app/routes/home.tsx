@@ -1,13 +1,8 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { loader } from "./profile.posts.grid";
+import PostsGrid from "./profile.posts.grid";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
+export { loader };
 
 export default function Home() {
-  return <Welcome />;
+  return <PostsGrid />;
 }
