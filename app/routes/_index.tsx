@@ -1,5 +1,5 @@
 import { redirect } from "react-router";
-
 export async function loader() {
-  return redirect("/profile/posts/grid");
+  return redirect("/home");
 }
+export default function ProfileIndex() { return null; }

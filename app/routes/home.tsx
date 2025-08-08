@@ -1,5 +1,6 @@
-import { loader } from "./profile.posts.grid";
-import PostsGrid from "./profile.posts.grid";
+// routes/home.tsx
+import { loader } from "./posts.all";
+import PostsGrid from "./posts.all";
 
 export { loader };
 

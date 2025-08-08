@@ -25,7 +25,7 @@ export function BottomNav() {
           ➕
         </Link>
         <Link
-          to="/profile/reels/grid"
+          to="/reels"
           aria-label="Reels"
           className="inline-flex flex-col items-center justify-center px-5"
         >
